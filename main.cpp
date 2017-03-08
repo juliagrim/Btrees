@@ -28,7 +28,7 @@ int main()
    if (infile.is_open())
    {
        int   c=0;
-       while (infile.good() && c <= 50)
+       while (infile.good() && c <= 1000)
        {
            //t[c] = new Airport();
            infile.getline(name, 256, ',');
@@ -66,7 +66,7 @@ int main()
    }
       t.traverse();
       cout<<" " << endl;
-   for (int i=50; i > 40; i--){
+   for (int i=1000; i > 0; i--){
       cout << t.getN(i) << endl;
    }
 }
